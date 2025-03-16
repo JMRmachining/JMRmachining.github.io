@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JMR Machining</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    /* Header and Navigation */
+    header {
+      background-color: #3A4148; /* Lighter Shade of Gunmetal */
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 4rem;
+      letter-spacing: 2px;
+      font-weight: 900;
+      color: #FFFFFF;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+    }
+    .motto {
+      color: #FF8C00;
+      font-size: 2.5rem;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+    nav {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #FF8C00;
+      border-radius: 4px;
+    }
+    
+    /* Section Styles */
+    section {
+      margin: 40px 0;
+    }
+    section h2 {
+      color: #00366A;
+      margin-top: 0;
+      font-size: 2rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .about, .services, .careers, .quote, .location {
+      background: #fff;
+      padding: 30px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* Services Cards Styles */
+    .services .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .services .card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .services .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .services .card h3 {
+      color: #00366A;
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .services .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    
+    /* Request a Quote Form Styles */
+    .quote form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .quote form div {
+      display: flex;
+      flex-direction: column;
+    }
+    .quote form input[type="text"],
+    .quote form input[type="email"],
+    .quote form input[type="file"],
+    .quote form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .quote form button {
+      background-color: #001f3f;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .quote form button:hover {
+      background-color: #FF8C00;
+    }
+    
+    /* Map Section Styles */
+    .map-container {
+      margin-top: 20px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #232A2E;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9rem;
+    }
+    footer p.social a {
+      color: #FF8C00;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    footer p.social a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <!-- Logo removed as per request -->
+      <h1>JMR Machining</h1>
+      <p class="motto">Just Made Right</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#careers">Careers</a>
+        <a href="#quote">Request a Quote</a>
+        <a href="https://instagram.com/jmrmachining" target="_blank">Instagram</a>
+        <a href="https://facebook.com/jmrmachining" target="_blank">Facebook</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        With over 14 years of experience in the aerospace, defense, and medical industries, JMR Machining has built a reputation for precision, reliability, and efficiency. We specialize in high-quality machining solutions tailored to meet the demands of various industries where precision and durability are critical.
+      </p>
+      <p>
+        Our expertise extends across a wide range of materials, including aluminum, steel, ABS, Delrin, Inconel, HDPE, LDPE, super alloys, brass, and copper. Whether it's complex aerospace components, durable medical equipment, or high-performance industrial parts, we have the capabilities to deliver with accuracy and consistency.
+      </p>
+      <p>
+        At JMR Machining, we understand that deadlines are just as important as quality. Our objective is to produce top-tier parts that not only meet but exceed our customers' expectations, all while adhering to their timelines. We leverage advanced machining technologies and meticulous quality control processes to ensure each project is Just Made Right.
+      </p>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Lathe Machining</h3>
+          <p>
+            Our lathe machining services deliver precision turning and cutting of metal components using state-of-the-art lathes. We handle both small-scale and large industrial parts, ensuring tight tolerances and impeccable surface finishes.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Mill Machining</h3>
+          <p>
+            Our mill machining operations are designed for high accuracy and complex geometries. Utilizing advanced milling machines, we produce intricate parts and precise features from a variety of materials, meeting the most demanding specifications.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Mold Making</h3>
+          <p>
+            We specialize in custom mold fabrication with an emphasis on durability and repeatability. Our expert team designs and builds molds tailored to your production needs, ensuring consistent quality and long tool life.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Molding and Casting</h3>
+          <p>
+            Our comprehensive molding and casting services cover a range of techniques to produce high-quality components. We optimize our processes for efficiency and precision, ensuring reliable outcomes for both prototyping and full-scale production.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Composites</h3>
+          <p>
+            Leveraging advanced techniques, our composite services work with modern composite materials to produce lightweight yet robust parts. Ideal for aerospace, defense, and other high-performance industries, our composites meet rigorous strength and durability standards.
+          </p>
+        </div>
+        <div class="card">
+          <h3>3D Printing</h3>
+          <p>
+            Utilizing cutting-edge 3D printing technology, we create detailed prototypes and production parts with rapid turnaround times. Our process supports complex designs and customized components, ensuring high resolution and precision.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Sand Blasting</h3>
+          <p>
+            Our sand blasting service prepares surfaces by cleaning, etching, and smoothing. We efficiently remove rust, paint, and imperfections, creating an ideal base for painting, coating, or further processing.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Polishing</h3>
+          <p>
+            We offer expert polishing services to achieve flawless surface finishes on a variety of materials. Our careful polishing processes enhance both the aesthetic appeal and the functional performance of your components.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Careers Section -->
+    <section id="careers" class="careers">
+      <h2>Careers</h2>
+      <p>
+        If you are interested in joining our team, please send your resume and a brief message to: 
+        <a href="mailto:Careers@JMRmachining.com">Careers@JMRmachining.com</a>
+      </p>
+    </section>
+    
+    <!-- Request a Quote Section -->
+    <section id="quote" class="quote">
+      <h2>Request a Quote</h2>
+      <p>
+        Location: 7500 Mill Run Rd, Athens, TX 75751<br>
+        Phone: <a href="tel:+19032513656">(903) 251-3656</a><br>
+        Email: <a href="mailto:info@jmrmachining.com">info@jmrmachining.com</a>
+      </p>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div>
+          <label for="file">Attach File:</label>
+          <input type="file" id="file" name="file">
+        </div>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+    
+    <!-- Map Section -->
+    <section id="location" class="location">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.7014342342105!2d-95.9220411847828!3d32.14064058093348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e06c74d4bd2f3%3A0x7e728a1f56c1255e!2s7500%20Mill%20Run%20Rd%2C%20Athens%2C%20TX%2075751!5e0!3m2!1sen!2sus!4v1616595234112!5m2!1sen!2sus" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p class="social">
+      Follow us on: 
+      <a href="https://instagram.com/jmrmachining" target="_blank">Instagram</a> | 
+      <a href="https://facebook.com/jmrmachining" target="_blank">Facebook</a>
+    </p>
+    <p>&copy; 2025 JMR Machining. All Rights Reserved.</p>
+  </footer>
+  
+</body>
+</html>
