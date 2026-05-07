@@ -42,9 +42,9 @@
       position: fixed;
       top: 0; left: 0; right: 0;
       z-index: 1000;
-      background: rgba(10, 22, 40, 0.96);
+      background: rgba(255, 255, 255, 0.98);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid #E0E8F0;
       padding: 0 40px;
       height: 70px;
       display: flex;
@@ -52,7 +52,7 @@
       justify-content: space-between;
       transition: box-shadow 0.3s;
     }
-    .navbar.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.4); }
+    .navbar.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.1); }
 
     .nav-logo {
       height: 48px;
@@ -73,7 +73,7 @@
       list-style: none;
     }
     .nav-links a {
-      color: rgba(255,255,255,0.78);
+      color: var(--navy);
       text-decoration: none;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 600;
@@ -84,7 +84,7 @@
       border-radius: 4px;
       transition: color 0.2s, background 0.2s;
     }
-    .nav-links a:hover { color: var(--white); background: rgba(232,119,34,0.18); }
+    .nav-links a:hover { color: var(--orange); background: rgba(232,119,34,0.08); }
     .nav-links .cta-link a {
       background: var(--orange);
       color: var(--white);
@@ -116,7 +116,7 @@
     }
     /* Bottom ticker bar */
     .hero::after {
-      content: 'PRECISION  ·  RELIABILITY  ·  AEROSPACE  ·  DEFENSE  ·  MEDICAL  ·  INDUSTRIAL  ·';
+      content: 'AEROSPACE  ·  DEFENSE  ·  MEDICAL  ·  INDUSTRIAL  ·';
       position: absolute;
       bottom: 0; left: 0; right: 0;
       background: var(--orange);
@@ -667,16 +667,16 @@
 
     /* ── RESPONSIVE ────────────────────────────── */
     .nav-links .nav-phone a {
-      color: var(--orange2);
-      border: 1px solid rgba(232,119,34,0.35);
+      color: var(--orange);
+      border: 1px solid rgba(232,119,34,0.4);
       border-radius: 4px;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
       letter-spacing: 1px;
     }
     .nav-links .nav-phone a:hover {
-      background: rgba(232,119,34,0.15);
-      color: var(--white);
+      background: rgba(232,119,34,0.1);
+      color: var(--navy);
     }
 
     /* ── WHY US ── */
@@ -780,7 +780,7 @@
   <section class="hero">
     <div class="hero-content">
       <span class="hero-eyebrow">Athens, TX · Est. 2024</span>
-      <h1>Precision.<br><span>Delivered.</span></h1>
+      <h1>Precision<br><span>Delivered</span></h1>
       <p>Precision machining solutions for aerospace, defense, and medical industries — built on advanced technology and an uncompromising commitment to quality.</p>
       <div class="hero-btns">
         <a href="#quote" class="btn-primary">Request a Quote</a>
@@ -799,10 +799,6 @@
       <div class="stat">
         <div class="stat-num">10</div>
         <div class="stat-label">Core Services</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Key Industries</div>
       </div>
       <div class="stat">
         <div class="stat-num">100%</div>
